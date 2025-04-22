@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="@color/blue">
+
+    <TextView
+        android:id="@+id/tv_Room_Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thêm phòng mới"
+        android:background="@drawable/btn_room"
+        android:padding="15dp"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:textColor="@color/black" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Lưu"
+            android:backgroundTint="@color/yellow"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Hủy"
+            android:backgroundTint="@color/yellow"
+            android:textColor="@color/black"
+            android:layout_marginStart="8dp" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edt_square"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="12dp"
+        android:hint="Diện tích"
+        android:textColorHint="@color/black"
+        android:inputType="number"
+        android:textColor="@color/black"
+        android:background="@drawable/btnlogin"/>
+
+    <EditText
+        android:id="@+id/edt_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="12dp"
+        android:hint="Giá tiền phòng"
+        android:inputType="numberDecimal"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:background="@drawable/btnlogin"/>
+
+    <EditText
+        android:id="@+id/edt_capacity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="12dp"
+        android:hint="Sức chứa"
+        android:inputType="numberDecimal"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:background="@drawable/btnlogin"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcv_services"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btnlogin"
+        android:padding="8dp" />
+
+</LinearLayout>

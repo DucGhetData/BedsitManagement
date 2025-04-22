@@ -1,0 +1,26 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.RentingHouseManagement" parent="Theme.Material3.DayNight.NoActionBar">
+
+        <item name="colorPrimary">#2196F3</item>
+        <item name="colorPrimaryVariant">@color/blue</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+
+        <!-- Màu phụ -->
+        <item name="colorSecondary">#03DAC6</item>
+        <item name="colorOnSecondary">#000000</item>
+
+        <!-- Bổ sung để tránh lỗi MaterialAlertDialog -->
+        <item name="colorSurface">#FFFFFF</item>
+        <item name="colorOnSurface">@color/white</item>
+        <item name="android:colorBackground">#FFFFFF</item>
+        <item name="colorOnBackground">#000000</item>
+
+        <item name="materialThemeOverlay">@style/ThemeOverlay.Material3.MaterialAlertDialog</item>
+
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.RentingHouseManagement" parent="Base.Theme.RentingHouseManagement" />
+</resources>

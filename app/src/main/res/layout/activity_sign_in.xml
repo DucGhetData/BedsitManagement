@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.SignInActivity"
+    android:padding="20dp"
+    android:background="@color/blue">
+
+    <ImageView
+        android:layout_width="299dp"
+        android:layout_height="299dp"
+        android:src="@drawable/logo"
+        android:layout_gravity="center"/>
+
+    <EditText
+        android:id="@+id/edt_email_si"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/black"
+        android:imeOptions="actionNext"
+        android:maxLength="100"
+        android:padding="12dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/btnlogin" />
+
+    <EditText
+        android:id="@+id/edt_password_si"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mật khẩu"
+        android:inputType="textPassword"
+        android:textColor="@color/black"
+        android:imeOptions="actionDone"
+        android:maxLength="100"
+        android:padding="12dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/btnlogin"
+        android:layout_marginTop="15sp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnsignin"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:layout_marginTop="25sp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:text="Sign in"
+        android:background="@drawable/btn_room"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/layout_sign_in"
+        android:layout_marginTop="15sp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don`t have account ? "
+            android:textSize="18sp"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/tv_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Sign up"
+            android:textColor="@color/white"
+            android:textSize="18sp"/>
+    </LinearLayout>
+</LinearLayout>

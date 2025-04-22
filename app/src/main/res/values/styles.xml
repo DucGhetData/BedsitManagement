@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="MenuItemText" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="BlueDatePickerDialog" parent="Theme.MaterialComponents.Dialog">
+        <item name="colorAccent">@color/blue</item> <!-- Cho nút chọn -->
+        <item name="android:datePickerStyle">@style/BlueDatePickerStyle</item>
+    </style>
+
+    <style name="BlueDatePickerStyle" parent="Widget.AppCompat.Light.ActionBar">
+        <item name="android:headerBackground">@color/blue</item> <!-- Header -->
+        <item name="android:background">@android:color/white</item>
+    </style>
+
+
+
+</resources>

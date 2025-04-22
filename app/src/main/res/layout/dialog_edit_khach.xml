@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tên khách"
+            android:textSize="25sp"/>
+        <EditText
+            android:id="@+id/etName"
+            android:hint="Tên khách"
+            android:layout_width="match_parent"
+            android:textSize="25sp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Số điện thoại"
+            android:textSize="25sp"
+            android:layout_marginTop="8dp"/>
+        <EditText
+            android:id="@+id/etPhone"
+            android:hint="Số điện thoại"
+            android:inputType="phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CMND/CCCD"
+            android:textSize="25sp"
+            android:layout_marginTop="8dp"/>
+        <EditText
+            android:id="@+id/etIdNumber"
+            android:hint="CMND/CCCD"
+            android:layout_width="match_parent"
+            android:textSize="25sp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ngày sinh (yyyy-MM-dd)"
+            android:textSize="25sp"
+            android:layout_marginTop="8dp"/>
+        <EditText
+            android:id="@+id/etBirthDate"
+            android:hint="Ngày sinh (yyyy-MM-dd)"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:layout_marginTop="5dp"/>
+
+        <Button
+            android:id="@+id/btnUpdate"
+            android:text="Cập nhật"
+            android:textSize="25sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"/>
+    </LinearLayout>
+</ScrollView>
